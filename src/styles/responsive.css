@@ -1,0 +1,148 @@
+
+  @media screen and (max-width: 1450px) {
+    .kategori{
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 1350px) {
+    .kategori{
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
+
+  @media screen and (max-width: 1140px) {
+
+    .kategori{
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer .bottom {
+      padding-right: 20%;
+    }
+    footer .upper {
+      padding-left: 5%;
+      width: 600px;
+    }
+  }
+  @media screen and (max-width: 1125px) {
+
+    footer .bottom {
+      padding-right: 20%;
+    }
+    footer .upper {
+      padding-left: 5%;
+      width: 600px;
+    }
+  }
+  @media screen and (max-width: 920px) {
+    .kategori{
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .kategori-items{
+      width: 180px;
+      height: 180px;
+    }
+
+    .kategori-items p {
+      font-size: 1rem;
+    }
+
+  }
+  @media screen and (max-width: 898px) {
+    .kategori{
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+  }
+  @media screen and (max-width: 822px) {
+
+  }
+
+  @media screen and (max-width: 700px) {
+    #hamburger {
+      display: block;
+  }
+
+  .app-bar-navigation {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 60%;
+      height: 100%;
+      background: #fff;
+      transition: right 0.3s linear;
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+      display: grid;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      z-index: -99;
+  }
+  
+
+  .app-bar-navigation.open {
+      right: 0;
+  }
+
+  .app-bar-navigation ul {
+      list-style: none;
+      padding: 20px;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+
+  }
+
+  .app-bar-navigation ul li {
+      padding: 10px 0;
+      border-bottom: 1px solid #e7e7e7;
+  }
+
+  .app-bar-navigation ul li a {
+      text-decoration: none;
+      font-size: 20px;
+      color: black;
+  }
+
+  .app-bar-navigation .user-login {
+      padding: 20px;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+  }
+
+  .app-bar-navigation .user-login a {
+    border: 2px solid #543310;
+      text-decoration: none;
+      font-size: 20px;
+      color: black;
+  }
+  }
+
+  @media screen and (max-width: 785px) {
+
+ 
+  }
+
+  @media screen and (max-width: 630px) {
+    .kategori{
+      grid-template-columns: repeat(2, 1fr);
+    }
+ 
+  }
+
+  @media screen and (max-width: 598px) {
+
+  }
+  
+  @media screen and (max-width: 440px) {
+    .kategori-items{
+      width: 90%;
+      height: 90%;
+  }
+  }
