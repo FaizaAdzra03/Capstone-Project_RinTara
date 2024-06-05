@@ -1,8 +1,56 @@
 const HomePage = {
   async render() {
     return `
-        <div class="most-view">
-            <h2>Most View</h2>
+    <div class="recently-add">
+            <h2>Recently Added Articles</h2>
+            <div class="recent-content">
+
+                <a href="" class="recent-item">
+                    <div class="recent-item-img">
+                        <img src="./images/image3.png" alt="">
+                    </div>
+                    <div class="recent-item-content">
+                        <h3>Judul</h3>
+                        <p>Lorem ipsum Lorem ipsum 
+                            dolor sit amet consectetur adipisicing elit. Delectus, deserunt. dolor sit amet consectetur adipisicing elit. Totam, repellat!</p>
+                    </div>
+                </a>
+
+                <a href="" class="recent-item">
+                    <div class="recent-item-img">
+                        <img src="./images/image3.png" alt="">
+                    </div>
+                    <div class="recent-item-content">
+                        <h3>Judul</h3>
+                        <p>Lorem ipsum Lorem ipsum 
+                            dolor sit amet consectetur adipisicing elit. Delectus, deserunt. dolor sit amet consectetur adipisicing elit. Totam, repellat!</p>
+                    </div>
+                </a>
+
+                <a href="" class="recent-item">
+                    <div class="recent-item-img">
+                        <img src="./images/image3.png" alt="">
+                    </div>
+                    <div class="recent-item-content">
+                        <h3>Judul</h3>
+                        <p>Lorem ipsum Lorem ipsum 
+                            dolor sit amet consectetur adipisicing elit. Delectus, deserunt. dolor sit amet consectetur adipisicing elit. Totam, repellat!</p>
+                    </div>
+                </a>
+
+
+                <a href="" class="recent-item">
+                    <div class="recent-item-img">
+                        <img src="./images/image3.png" alt="">
+                    </div>
+                    <div class="recent-item-content">
+                        <h3>Judul</h3>
+                        <p>Lorem ipsum Lorem ipsum 
+                            dolor sit amet consectetur adipisicing elit. Delectus, deserunt. dolor sit amet consectetur adipisicing elit. Totam, repellat!</p>
+                    </div>
+                </a>
+
+            </div>
         </div>
 
         <div class="about-indo">

@@ -1,0 +1,144 @@
+/* 
+    Main
+ */
+
+ h2{
+    font-size: 3rem;
+}
+
+.about-indo{
+    height: 90vh;
+    background-color: #F6F2DB;
+    display: grid;
+    padding: 35px;
+    max-width: 100%;
+}
+
+.about-indo .about-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.about-content p{
+    font-size: 1.3rem;
+    padding: 15px;
+}
+
+.about-content img{
+    border-radius: 30px;
+    width: 100%;
+}
+
+/* Recent add */
+.recently-add{
+    height: 100vh;
+    padding: 20px;
+    font-size: 1.3rem;
+
+    display: grid;
+    justify-content: center;
+  }
+  
+  .recently-add a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .recently-add h2{
+    padding-top: 50px;
+    align-content: flex-end;
+  }
+  
+  .recent-content{
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    align-items: center;
+    justify-items: center;
+    
+    overflow: hidden;
+  }
+  
+  .recent-item{
+    background-color: #AF8F6F;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .recent-item-img{
+    height: 50%;
+  }
+  
+  .recent-item-img img{
+    height: 100%;
+    width: 100%;
+  }
+  
+  .recent-item-content{
+    padding: 30px;
+  }
+  
+  .recent-content p{
+    padding-top: 10px;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    white-space: normal;
+  }
+
+  /* 
+Explore Page
+ */
+
+
+.explore{
+    display: grid;
+    height: 90vh;
+    justify-content: center;
+    padding: 35px;
+    overflow: hidden;
+}
+
+.explore h2{
+    text-align: center;
+}
+
+.explore-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.explore-content .explore-item-img{
+    background-color: burlywood;
+    width: 280px;
+    height: 390px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.explore-items{
+    text-decoration: none;
+}
+
+.explore-items img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.explore-items p{
+    padding-top: 15px;
+    font-size: 1.5rem;
+    color: black;
+
+}

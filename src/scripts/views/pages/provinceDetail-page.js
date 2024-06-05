@@ -102,8 +102,21 @@ const ProvinceDetail = {
     },
   
     async afterRender() {
-      const hero = document.querySelector('hero-element');
+      const hero = document.querySelector('.hero-element');
       hero.style.display = 'none';
+
+      const header = document.querySelector(".app-header");
+      const provinceHeaderContent = document.querySelector(".province-detail .header-content");
+
+      if (header && provinceHeaderContent) {
+        window.addEventListener("scroll", function() {
+          if (window.scrollY < provinceHeaderContent.offsetHeight) {
+            header.classList.add("scrolled");
+          } else {
+            header.classList.remove("scrolled");
+          }
+        });
+      }
     },
   };
   

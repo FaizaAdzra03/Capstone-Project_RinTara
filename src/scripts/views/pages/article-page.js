@@ -8,7 +8,7 @@ const ArticlePage = {
     },
   
     async afterRender() {
-      const hero = document.querySelector('hero-element');
+      const hero = document.querySelector('.hero-element');
       hero.style.display = 'none';
     },
   };
