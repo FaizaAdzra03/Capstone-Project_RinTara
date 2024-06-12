@@ -1,5 +1,11 @@
 
   @media screen and (max-width: 1450px) {
+    footer-bar  {
+      //gap: 20%;
+    }
+    footer-bar img {
+      max-width: 40%;
+    }
     .kategori{
       grid-template-columns: repeat(5, 1fr);
     }
@@ -50,14 +56,15 @@
     .kategori{
       grid-template-columns: repeat(3, 1fr);
     }
+    
 
-    footer .bottom {
+    /* footer-bar .bottom {
       padding-right: 20%;
     }
-    footer .upper {
+    footer-bar .upper {
       padding-left: 5%;
       width: 600px;
-    }
+    } */
   }
   @media screen and (max-width: 1000px) {
     .province-detail .culture-card-list{
@@ -65,12 +72,11 @@
       padding-left: 0;
     }
 
-    footer .bottom {
-      padding-right: 20%;
+     footer-bar  {
+      gap: 10%;
     }
-    footer .upper {
-      padding-left: 5%;
-      width: 600px;
+    footer-bar img {
+      max-width: 40%;
     }
   }
   @media screen and (max-width: 920px) {
@@ -109,7 +115,15 @@
     }
 
   }
+  /* @media screen and (max-width: 861px) {
+    footer-bar .upper {
+      padding-left: 15px;
+      margin: 10px;
+      padding-bottom: 5px;
+  }
+  } */
   @media screen and (max-width: 840px) {
+   
     .app-bar-navigation{
       width: 70%;
   }
@@ -120,6 +134,9 @@
 
   .province-detail p{
       font-size: 1.1rem;
+  }
+  footer-bar img {
+    max-width: 60%;
   }
 
   }
@@ -152,6 +169,10 @@
 
   .app-bar-navigation.open #hamburger {
     color: black;
+    footer-bar img {
+    max-width: 60%;
+  }
+
 }
 
   .app-bar-navigation ul {
@@ -213,15 +234,30 @@
   .slider-scrollbar .scrollbar-thumb{
     width: 20%;
   }
+  footer-bar img {
+    max-width: 45%;
+  }
+  footer-bar img {
+    max-width: 62%;
+  }
+
 }
 
 @media screen and (max-width: 660px) {
+  footer-bar .bottom{
+    width : 50%;
+  }
   .province-detail .culture-card-list{
     grid-template-columns: 1fr;
   }
 
   .recent-content{
     grid-template-columns: 1fr;
+  }
+  footer-bar .nav ul li {
+    
+    font-size: 15px;
+    
   }
 }
 
@@ -302,7 +338,18 @@
       display: grid;
       padding: 50px 20px 50px 20px;
   }
+ 
 
+footer-bar {
+  flex-direction: column;
+  align-items: center;
+}
+footer-bar .bottom{
+  padding-right: 0;
+}
+footer-bar .upper{
+  padding-left:0;
+}
   }
   
   @media screen and (max-width: 440px) {
@@ -339,5 +386,7 @@
     font-size: 0.8rem;
 }
 
-
+footer-bar img {
+  max-width: 90%;
+}
 }

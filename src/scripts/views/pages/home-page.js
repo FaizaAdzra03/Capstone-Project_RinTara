@@ -59,7 +59,13 @@ const HomePage = {
         <div class="about-indo">
             <h2>About Indonesia</h2>
             <div class="about-content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum explicabo et veritatis perspiciatis minus rerum inventore dolorem expedita odit reiciendis voluptatibus praesentium exercitationem aperiam, dolorum, consectetur animi excepturi voluptas, fugit perferendis doloribus veniam autem a! Asperiores, amet? Laudantium sunt qui facilis magnam. A magni voluptas sit accusamus nulla odit debitis. Hic, iste harum. Aliquam ducimus, labore blanditiis sapiente ea sint, culpa recusandae obcaecati fugit alias a hic nostrum excepturi vel omnis consectetur quia officia architecto iusto ad quam quas. Quo nihil odit doloremque culpa temporibus odio ex incidunt possimus impedit unde! Atque et dicta voluptatem exercitationem nam vero corporis aliquid cum dolore, tenetur quisquam nisi adipisci inventore consectetur, quasi nulla tempora pariatur. Sapiente magnam impedit numquam voluptatum, nisi quasi saepe?</p>
+                <p>Indonesia, sebuah negara kepulauan yang terdiri dari lebih dari 17.000 pulau, merupakan mosaic budaya, sejarah, dan alam yang memukau. 
+                Di antara hamparan laut biru dan hijau lebatnya hutan tropis, berbagai suku dan tradisi saling bercerita, menjadikan Indonesia sebagai 
+                salah satu negara paling beragam di dunia. Indonesia tidak hanya dikenal karena keragaman geografisnya, tetapi juga sebagai rumah bagi 
+                warisan budaya yang kaya. Setiap pulau menyimpan cerita uniknya sendiri, dari ritual adat yang sakral hingga festival yang meriah dan 
+                penuh warna. Seni tradisional, seperti ukiran kayu, batik, dan tenun ikat, dipertahankan oleh para pengrajin yang meneruskan keterampilan 
+                ini dari generasi ke generasi. Gastronomi Indonesia, dengan rempah-rempah yang khas dan variasi masakan lokal, menawarkan palet rasa yang 
+                memanjakan lidah dan menggugah selera. Ini adalah tanah dimana tradisi dan modernitas bertemu, menciptakan harmoni yang dinamis dan menarik.</p>
                 <img src="./images/volcano-with-mist-sunset 2.jpg" alt="about-indonesia-picture">
             </div>
         </div>
