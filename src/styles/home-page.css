@@ -7,7 +7,7 @@
 }
 
 .about-indo{
-    height: 90vh;
+    /* height: 90vh; */
     background-color: #F6F2DB;
     display: grid;
     padding: 35px;
@@ -27,6 +27,8 @@
 
 .about-content img{
     border-radius: 30px;
+    /* max-width: 950px;
+    max-height: 750px; */
     width: 100%;
 }
 
@@ -102,10 +104,10 @@ Explore Page
 
 .explore{
     display: grid;
-    height: 90vh;
     justify-content: center;
-    padding: 35px;
-    overflow: hidden;
+    padding: 30px 35px;
+    
+    position: relative;
 }
 
 .explore h2{
@@ -114,8 +116,97 @@ Explore Page
 
 .explore-content{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     gap: 40px;
+
+    padding-top: 30px;
+
+    overflow-x: auto;
+    scrollbar-width: none;
+    
+}
+
+.explore .slide-button{
+  position: absolute;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  color: #fff;
+  border: none;
+  outline: none;
+  background: #000;
+  font-size: 2.2rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transform: translateY(-50%);
+
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+.explore .slide-button:hover{
+  background: #AF8F6F;
+}
+
+.explore .slide-button#prev-slide{
+  left: -20px;
+}
+
+.explore .slide-button#next-slide{
+  right: -20px;
+}
+
+.explore-content::-webkit-scrollbar{
+  display: none;
+
+}
+
+.explore .slider-scrollbar{
+  height: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+}
+
+.slider-scrollbar .scrollbar-track{
+  height: 2px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #ccc;
+  position: relative;
+  border-radius: 4px;
+}
+
+.slider-scrollbar:hover .scrollbar-track{
+  height: 5px;
+}
+
+
+.slider-scrollbar .scrollbar-thumb{
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background: #000;
+  border-radius: inherit;
+  cursor: grab;
+}
+
+.slider-scrollbar .scrollbar-thumb:active{
+  cursor: grabbing;
+  height: 8px;
+  top: -2px;
+
+}
+.slider-scrollbar .scrollbar-thumb::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  bottom: -10px;
+
 }
 
 .explore-content .explore-item-img{
@@ -123,7 +214,6 @@ Explore Page
     width: 280px;
     height: 390px;
     border-radius: 10px;
-    overflow: hidden;
 }
 
 .explore-items{

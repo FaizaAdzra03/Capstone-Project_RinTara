@@ -63,7 +63,7 @@ const ProvinceDetail = {
     
                   <section class="history">
                     <h2>Sejarah Terkait</h2>
-                    <div class="search-bar">
+                    <div class="province-search-bar">
                       <input type="text" placeholder="Search" />
                       <button>Search</button>
                     </div>
@@ -102,15 +102,13 @@ const ProvinceDetail = {
     },
   
     async afterRender() {
-      const hero = document.querySelector('.hero-element');
-      hero.style.display = 'none';
 
       const header = document.querySelector(".app-header");
       const provinceHeaderContent = document.querySelector(".province-detail .header-content");
 
       if (header && provinceHeaderContent) {
         window.addEventListener("scroll", function() {
-          if (window.scrollY < provinceHeaderContent.offsetHeight) {
+          if (window.scrollY > provinceHeaderContent.offsetHeight) {
             header.classList.add("scrolled");
           } else {
             header.classList.remove("scrolled");

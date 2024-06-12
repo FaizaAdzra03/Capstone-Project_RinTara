@@ -5,14 +5,45 @@
     }
   }
 
+  @media screen and (max-width: 1390px){
+    .recent-content{
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+  }
+
   @media screen and (max-width: 1350px) {
     .kategori{
       grid-template-columns: repeat(4, 1fr);
     }
+
+    .province-detail .culture-card-list{
+      grid-template-columns: repeat(2, 1fr);
+      padding-right: 150px;
+      padding-left: 150px;
+    }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (max-width: 1200px) {
+    .about-indo .about-content{
+    grid-template-columns: 1fr;
+    justify-items: center;
   }
+
+  .about-indo .about-content > *:nth-child(1) {
+    order: 2;
+  }
+
+  .about-indo .about-content > *:nth-child(2) {
+    order: 1;
+  }
+
+  .about-content img{
+    padding-top: 20px;
+    max-height: 500px;
+    max-width: 600px;
+  }
+}
 
   @media screen and (max-width: 1140px) {
 
@@ -28,7 +59,11 @@
       width: 600px;
     }
   }
-  @media screen and (max-width: 1125px) {
+  @media screen and (max-width: 1000px) {
+    .province-detail .culture-card-list{
+      padding-right: 0;
+      padding-left: 0;
+    }
 
     footer .bottom {
       padding-right: 20%;
@@ -52,6 +87,21 @@
       font-size: 1rem;
     }
 
+    .aboutUs h1{
+      font-size: 1.7rem;
+    }
+
+    .aboutUs h2{
+      font-size: 1.4rem;
+    }
+
+    .aboutUs p{
+      font-size: 1rem;
+    }
+
+    .aboutUs figcaption{
+      font-size: 1.2rem;
+    }
   }
   @media screen and (max-width: 898px) {
     .kategori{
@@ -59,7 +109,18 @@
     }
 
   }
-  @media screen and (max-width: 822px) {
+  @media screen and (max-width: 840px) {
+    .app-bar-navigation{
+      width: 70%;
+  }
+
+  .province-detail h2{
+    font-size: 2rem;
+  }
+
+  .province-detail p{
+      font-size: 1.1rem;
+  }
 
   }
 
@@ -74,20 +135,24 @@
       right: -100%;
       width: 60%;
       height: 100%;
-      background: #fff;
+      background: #543310;
       transition: right 0.3s linear;
       box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
       display: grid;
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      z-index: -99;
+      z-index: -9999;
   }
   
 
   .app-bar-navigation.open {
       right: 0;
   }
+
+  .app-bar-navigation.open #hamburger {
+    color: black;
+}
 
   .app-bar-navigation ul {
       list-style: none;
@@ -105,8 +170,8 @@
 
   .app-bar-navigation ul li a {
       text-decoration: none;
-      font-size: 20px;
-      color: black;
+      font-size: 18px;
+      color: white;
   }
 
   .app-bar-navigation .user-login {
@@ -117,26 +182,126 @@
   }
 
   .app-bar-navigation .user-login a {
-    border: 2px solid #543310;
+    border: 2px solid whitesmoke;
       text-decoration: none;
-      font-size: 20px;
-      color: black;
-  }
+      font-size: 18px;
+      color: white;
   }
 
-  @media screen and (max-width: 785px) {
-
- 
+  .hero-element h1{
+    font-size: 7rem;
+    padding-left: 20px;
+    padding-right: 20px;
   }
+
+  .hero-element p{
+    font-size: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .explore .slide-button{
+    display: none!important;
+  }
+
+  .explore-content{
+    gap: 20px;
+    margin-bottom: 20px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .slider-scrollbar .scrollbar-thumb{
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .province-detail .culture-card-list{
+    grid-template-columns: 1fr;
+  }
+
+  .recent-content{
+    grid-template-columns: 1fr;
+  }
+}
+
 
   @media screen and (max-width: 630px) {
     .kategori{
       grid-template-columns: repeat(2, 1fr);
     }
+
+    .aboutUs .vission{
+      flex-direction: column-reverse;
+    }
+
+    .vission-image {
+      width: 45%;
+      height: 90%;
+    }
+
+    .aboutUs .mission-item{
+      flex-direction: column;
+    }
+
+    .aboutUs .mission-item:nth-of-type(2) {
+      flex-direction: column-reverse;
+    }
+
+    .article-content p {
+      padding: 20px 20px;
+    }
+
+
  
   }
 
-  @media screen and (max-width: 598px) {
+  @media screen and (max-width: 550px) {
+    .app-bar-logo{
+      font-size: 1rem;
+    }
+
+    .app-bar-navigation {
+      right: -100%;
+      width: 100%;
+      height: 100%;
+  }
+
+  .app-bar-navigation ul li a {
+      font-size: 15px;
+  }
+
+  .app-bar-navigation .user-login a {
+      font-size: 15px;
+  }
+
+    .aboutUs .jumbotron p {
+      padding: 40px 20px;
+    }
+
+    .aboutUs .vission{
+      padding: 40px 20px;
+    }
+
+    .aboutUs .mission{
+      padding: 40px 20px;
+    }
+
+    .aboutUs .mission-item{
+      margin: 0;
+      gap: 10px;
+      padding-top: 25px;
+
+    }
+
+    .article-page .featured-image {
+      width: 90%;
+    }
+
+    .province-main-content{
+      display: grid;
+      padding: 50px 20px 50px 20px;
+  }
 
   }
   
@@ -145,4 +310,34 @@
       width: 90%;
       height: 90%;
   }
+
+  .article-content h1 {
+    margin-top: 0;
+    font-size: 1.5rem;
   }
+
+  .hero-element h1{
+    font-size: 5rem;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .search-bar input{
+    font-size: 1rem;
+    max-width: 90%;
+  }
+
+  .article-item h3{
+    font-size: 1.3rem;
+}
+
+  .article-item h4{
+    font-size: 1rem;
+  }
+
+  .article-item p{
+    font-size: 0.8rem;
+}
+
+
+}

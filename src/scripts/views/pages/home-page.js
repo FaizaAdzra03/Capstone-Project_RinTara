@@ -1,6 +1,9 @@
+import initSlider from "../../utils/scrollHandler";
+
 const HomePage = {
   async render() {
     return `
+    <hero-element></hero-element>
     <div class="recently-add">
             <h2>Recently Added Articles</h2>
             <div class="recent-content">
@@ -63,7 +66,34 @@ const HomePage = {
 
         <div class="explore">
             <h2>Explore</h2>
-            <div class="explore-content">
+            
+            <button id="prev-slide" class="slide-button material-symbols-rounded">chevron_left</button>
+
+            <div class="explore-content">                
+                <a href="#/explore" class="explore-items">
+                    <div class="explore-item-img">
+                        <img src="./images/image3.png" alt="">
+                    </div>
+                    <p>Jawa Barat</p>
+                </a>
+                <a href="#/explore" class="explore-items">
+                    <div class="explore-item-img">
+                        <img src="./images/image3.png" alt="">
+                    </div>
+                    <p>Jawa Barat</p>
+                </a>
+                <a href="#/explore" class="explore-items">
+                    <div class="explore-item-img">
+                        <img src="./images/image3.png" alt="">
+                    </div>
+                    <p>Jawa Barat</p>
+                </a>
+                <a href="#/explore" class="explore-items">
+                    <div class="explore-item-img">
+                        <img src="./images/image3.png" alt="">
+                    </div>
+                    <p>Jawa Barat</p>
+                </a>
                 <a href="#/explore" class="explore-items">
                     <div class="explore-item-img">
                         <img src="./images/image3.png" alt="">
@@ -90,12 +120,34 @@ const HomePage = {
                 </a>
             </div>
 
-        </div>
+            <button id="next-slide" class="slide-button material-symbols-rounded">chevron_right</button>
+
+
+                <div class="slider-scrollbar">
+                    <div class="scrollbar-track">
+                        <div class="scrollbar-thumb"></div>
+                    </div>
+                </div>
+
+            </div>
       `;
   },
 
   async afterRender() {
-    // Fungsi ini akan dipanggil setelah render()
+    const header = document.querySelector(".app-header");
+    const heroElement = document.querySelector(".hero-element");
+    
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > heroElement.offsetHeight) {
+            header.classList.add("scrolled");
+        } else {
+            header.classList.remove("scrolled");
+        }
+    });
+
+    window.addEventListener("resize", initSlider());
+    window.addEventListener("load", initSlider());
+ 
   },
 };
 
