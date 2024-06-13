@@ -8,7 +8,7 @@ const routes = {
   '/': HomePage,
   '/explore': ExplorePage,
   '/about-us': AboutUs,
-  '/province-detail' : ProvinceDetail,
+  '/province-detail/:id' : ProvinceDetail,
   '/article' : ArticlePage,
 };
 

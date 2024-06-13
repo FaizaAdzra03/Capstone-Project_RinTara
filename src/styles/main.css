@@ -231,8 +231,9 @@ hero
 .kategori-items p {
     text-align: center;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /* 
@@ -377,78 +378,75 @@ Article
 /* 
 footer 
 */
-.social-media ul {
+
+/* .social-media {
   height: 100%;
-
-  padding: 5px;
-  display: flex;
-  justify-content: center;
-}
-.social-media li {
-  list-style-type: none;
-  height: 30px;
-  padding: 10px;
-}
-.social-media li a {
-  text-decoration: none;
-  font-size: 1.5rem;
-  color: white;
-}
-
-
-footer-bar{
-  justify-content: space-between;
-  display: flex;
-  align-items: center;
-  background-color: #212121;
-  color: #ffffff;
-  width: 100%;
-  margin: 0 auto;
-  background-color: #543310;
-  gap: 20%;
-}
-footer-bar .upper{
-  padding-left: 5%;
-  margin: 10px;
-  padding-bottom: 5px;
-}
-footer-bar .logo {
-  flex: 1;
-  text-align: center;
-  padding: 20px;
-}
-footer-bar img {
-  max-width: 30%;
-}
-footer-bar .bottom {
-  display: flex;
-  justify-content: center;
-  margin: 10px;
-  align-items: center;
-  padding-right: 5%;;
-}
-footer-bar .nav {
-  display: flex; 
-  align-items: center; 
-}
-footer-bar .nav ul {
-  display: flex;
-  align-items: center; 
-  list-style: none;
+} */
+.social-media ul {
+    height: 100%;
   
-}
-footer-bar .nav ul li {
-  font-weight: bold;
-  font-size: 18px;
-  padding: 10px;
-}
-footer-bar .nav ul li a {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+  }
+  .social-media li {
+    list-style-type: none;
+    height: 30px;
+    padding: 10px;
+  }
+  .social-media li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+  }
   
-  color: #ffffff;
-  text-decoration: none;
+  footer {
+    display: flex;
+    /* justify-content: space-between; */
+    background-color: #212121;
+    color: #ffffff;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #543310;
+    flex-direction: row;
+    gap: 10%;
+  }
   
-}
-footer-bar .nav ul li a:hover {
-  color: #ffd9b7;
-  font-weight: bold;
-}
+  footer .logo {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+  }
+  footer .bottom {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+  }
+  
+  footer .bottom .nav {
+    padding: 10px;
+  }
+  footer .nav h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ece3ce;
+  }
+  footer .nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  footer .nav ul li {
+    margin-bottom: 10px;
+  }
+  footer .nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  footer .nav ul li a:hover {
+    color: #ffd9b7;
+    font-weight: bold;
+  }
+
+

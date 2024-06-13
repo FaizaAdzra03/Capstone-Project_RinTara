@@ -1,3 +1,6 @@
+import { kategoriTemplate } from "../template/template-creator";
+import data from '../../data/DATA.json';
+
 const ExplorePage = {
   async render() {
     return `
@@ -10,42 +13,7 @@ const ExplorePage = {
             </div>
         </div>
 
-        <div class="kategori">
-            <a href="#/province-detail" class="kategori-items">
-                <div class="kategori-img">
-                    <img src="../images/image3.png" alt="">
-                </div>
-                <p>Jawa Timur</p>
-            </a>
-
-            <!-- Tambahan aja -->
-            <a href="#/province" class="kategori-items">
-                <div class="kategori-img">
-                    <img src="../images/image3.png" alt="">
-                </div>
-                <p>Jawa Timur</p>
-            </a>
-            <a href="#/province" class="kategori-items">
-                <div class="kategori-img">
-                    <img src="../images/image3.png" alt="">
-                </div>
-                <p>Jawa Timur</p>
-            </a>
-            <a href="#/province" class="kategori-items">
-                <div class="kategori-img">
-                    <img src="../images/image3.png" alt="">
-                </div>
-                <p>Jawa Timur</p>
-            </a>
-            <a href="#/province" class="kategori-items">
-                <div class="kategori-img">
-                    <img src="../images/image3.png" alt="">
-                </div>
-                <p>Jawa Timur</p>
-            </a>
-
-            
-        </div>
+        <div class="kategori"></div>
     </div>
       `;
   },
@@ -53,6 +21,11 @@ const ExplorePage = {
   async afterRender() {
       const header = document.querySelector(".app-header");
       header.classList.add("scrolled");
+
+      const container = document.querySelector('.kategori');
+      data.provinces.forEach((province) => {
+        container.innerHTML += kategoriTemplate(province);
+      });
 
   },
 };

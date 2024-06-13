@@ -5,7 +5,10 @@ const AboutUs = {
       <div class="jumbotron">
       <h1>About Us</h1>
       <p>
-        Di Rintara, kami berdedikasi untuk menyajikan sejarah dan keanekaragaman budaya yang kaya dari Indonesia. Kami berkomitmen untuk membangun kesadaran dan apresiasi terhadap warisan unik bangsa Indonesia. Melalui kumpulan artikel kami berusaha menyediakan sumber belajar yang dapat diakses oleh semua kalangan.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        rutrum, diam a pulvinar vulputate, urna sem pellentesque sem, quis
+        vestibulum leo ex tincidunt neque. Phasellus porta ornare turpis, quis
+        maximus urna feugiat sit amet. Etiam mattis diam ac porta lacinia.
       </p>
       </div>
     
@@ -18,7 +21,7 @@ const AboutUs = {
     <div class="vission-card">
       <h2>Visi Kami</h2>
       <p>
-          Visi kami adalah untuk melestarikan sejarah dan warisan budaya serta meningkatkan pengetahuan  menginspirasi generasi bangsa untuk mengeksplorasi, memahami, dan menghargai keberagaman yang menjadikan Indonesia unik.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </div>
   </section>
@@ -45,7 +48,8 @@ const AboutUs = {
       <div class="mission-item">
           <div class="mission-content">
           <p>
-            Dengan menciptakan ensiklopedia yang menarik dan mengasyikkan, dapat menginspirasi publik untuk belajar lebih banyak tentang sejarah dan warisan budaya Indonesia.
+            Kami membantu para guru, siswa, dan sekolah dengan menyediakan
+            sumber daya yang dapat diandalkan, mudah dibaca
           </p>
       </div>
       <div class="mission-image">

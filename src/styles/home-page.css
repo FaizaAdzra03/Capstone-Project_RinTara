@@ -34,7 +34,7 @@
 
 /* Recent add */
 .recently-add{
-    height: 100vh;
+    min-height: 100vh;
     padding: 20px;
     font-size: 1.3rem;
 
@@ -53,14 +53,13 @@
   }
   
   .recent-content{
-    height: 70vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
     align-items: center;
     justify-items: center;
-    
-    overflow: hidden;
   }
   
   .recent-item{
@@ -106,6 +105,7 @@ Explore Page
     display: grid;
     justify-content: center;
     padding: 30px 35px;
+    min-height: 80vh;
     
     position: relative;
 }
@@ -214,6 +214,7 @@ Explore Page
     width: 280px;
     height: 390px;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .explore-items{
@@ -224,6 +225,7 @@ Explore Page
     width: 100%;
     height: 100%;
     object-fit: cover;
+
 }
 
 .explore-items p{
