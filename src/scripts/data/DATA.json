@@ -10,13 +10,29 @@
             "bahasa": "Bahasa Aceh",
             "situs": "Masjid Raya Baiturrahman, Kerkhof Peucut",
             "tokoh": "Sultan Iskandar Muda, Cut Nyak Dhien",
-            "budaya": [
-                "https://www.gramedia.com/literasi/tari-saman/",
-                "https://www.ruparupa.com/blog/fakta-unik-rumah-adat-aceh/",
-                "https://upload.wikimedia.org/wikipedia/commons/8/88/COLLECTIE_TROPENMUSEUM_Tamboerijn_TMnr_674-744.jpg",
-                "https://www.rri.co.id/takengon/daerah/315317/pendidikan-karakter-dalam-kearifan-lokal-budaya-gayo"
+            "budaya":[
+                {
+                    "url" : "https://cdnwpedutorenews.gramedia.net/wp-content/uploads/2022/01/10150442/popmama.jpg",
+                    "title" : "Tari Saman",
+                    "description" : "Dikenal Sebagai Tari Seribu Tangan"
+                },
+                {
+                    "url" : "https://www.ruparupa.com/blog/wp-content/uploads/2020/06/Screen-Shot-2020-06-14-at-23.59.31.png",
+                    "title" : "Rumah Krong Bade",
+                    "description" : "Rumah Khas Masyarakat Aceh"
+                },
+                {
+                    "url" : "https://upload.wikimedia.org/wikipedia/commons/8/88/COLLECTIE_TROPENMUSEUM_Tamboerijn_TMnr_674-744.jpg",
+                    "title" : "Rapai",
+                    "description" : "Alat musik perkusi yang berbentuk seperti rebana besar."
+                },
+                {
+                    "url" : "https://cdn.rri.co.id/berita/100/images/1691643804191-Suku-Gayo-1/1691643804191-Suku-Gayo-1.jpg",
+                    "title" : "Suku Gayo",
+                    "description" : "Salah satu etnis suku bangsa yang mendiami dataran tinggi Gayo di Provinsi Aceh"
+                }
             ]
-        },
+        },    
         {
             "id": 2,
             "title": "Sumatera Utara",
@@ -27,11 +43,29 @@
             "bahasa": "Bahasa Batak",
             "situs": "Museum Negeri Provinsi Sumatera Utara, Istana Maimun",
             "tokoh": "Raja Ismail (Tuanku Rao), Sisingamangaraja XII",
-            "budaya": [
-                "https://bobo.grid.id/read/082886004/tari-tortor-sejarah-jenis-fungsi-dan-gerakannya",
-                "https://www.detik.com/sumut/budaya/d-6944104/mengenal-rumah-bolon-rumah-adat-sumatera-utara-yang-khas",
-                "https://awsimages.detik.net.id/community/media/visual/2023/09/28/gondang-batak_169.jpeg?w=1200",
-                "https://www.batamnews.co.id/foto_berita/2023/05/2023-05-10-tradisi-khas-suku-batak-di-sumatera-utara-menelusuri-warisan-budaya-yang-memikat.jpg"
+            "budaya": 
+            [
+                {
+                    "url" : "https://asset-a.grid.id//crop/0x0:0x0/700x465/photo/2021/09/12/mengenal-tari-tortor-sejarah-j-20210912110035.jpg",
+                    "title" : "Tari Tor-Tor",
+                    "description" : "Tarian Tradisional suku Batak Toba"
+                },
+                {
+                    "url" : "https://akcdn.detik.net.id/community/media/visual/2022/11/06/rumah-bolon-di-huta-siallagan_169.jpeg?w=700&q=90",
+                    "title" : "Rumah Bolon",
+                    "description" : "Rumah Adat tradisional suku Batak Toba"
+                },
+                {
+                    "url" : "https://awsimages.detik.net.id/community/media/visual/2023/09/28/gondang-batak_169.jpeg?w=1200",
+                    "title" : "Gondang",
+                    "description" : "Alat musik perkusi tradisional suku Batak Toba"
+                },
+                {
+                    "url" : "https://www.batamnews.co.id/foto_berita/2023/05/2023-05-10-tradisi-khas-suku-batak-di-sumatera-utara-menelusuri-warisan-budaya-yang-memikat.jpg",
+                    "title" : "Lompat Batu",
+                    "description" : "Tradisi ini merupakan ritual wajib bagi para lelaki sebagai simbol menuju kedewasaan"
+                }
+
             ]
         },
         {
@@ -45,11 +79,28 @@
             "situs": "Benteng Kuto Besak, Museum Sultan Mahmud Badaruddin II",
             "tokoh": "Sultan Mahmud Badaruddin II, A.M Thalib",
             "budaya": [
-                "https://asset.kompas.com/crops/RC1u-dXj6prNZfwSopUWd9ZDNZ4=/0x0:750x500/750x500/data/photo/2022/02/23/6215a36cc4c99.jpg",
-                "https://wonderfulimage.s3-id-jkt-1.kilatstorage.id/1622118118-rumah_limas-2-thumb.jpg",
-                "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgU3R-2QdbVxOZEBXv4NR6y0e3MB-CFfu9fNlNXWrmybpsfnpYpGRwVEtBR9Fd9aV7ASiXSGNWD-EiNPvOPhnwIV3kKwS8gcsI8Xe_275inEBGNfkxYwWLC4eR6CEhVC0j1Q_VWlxdwzmk/s640/alat+musik+tradisional+burdah.jpg",
-                "https://ik.imagekit.io/tvlk/blog/2024/03/7RDAo1iB-shutterstock_1043155474.jpg?tr=dpr-2,w-675"
-            ]
+                        {
+                            "url": "https://asset.kompas.com/crops/RC1u-dXj6prNZfwSopUWd9ZDNZ4=/0x0:750x500/750x500/data/photo/2022/02/23/6215a36cc4c99.jpg",
+                            "title": "Tari Srimpi",
+                            "description": "Tari tradisional"
+                        },
+                        {
+                            "url": "https://wonderfulimage.s3-id-jkt-1.kilatstorage.id/1622118118-rumah_limas-2-thumb.jpg",
+                            "title": "Rumah Limas",
+                            "description": "Rumah adat "
+                        },
+                        {
+                            "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgU3R-2QdbVxOZEBXv4NR6y0e3MB-CFfu9fNlNXWrmybpsfnpYpGRwVEtBR9Fd9aV7ASiXSGNWD-EiNPvOPhnwIV3kKwS8gcsI8Xe_275inEBGNfkxYwWLC4eR6CEhVC0j1Q_VWlxdwzmk/s640/alat+musik+tradisional+burdah.jpg",
+                            "title": "Tamboerijn",
+                            "description": "Alat musik tradisional yang sering digunakan dalam berbagai upacara adat di Indonesia."
+                        },
+                        {
+                            "url": "https://ik.imagekit.io/tvlk/blog/2024/03/7RDAo1iB-shutterstock_1043155474.jpg?tr=dpr-2,w-675",
+                            "title": " Budaya Gayo",
+                            "description": "Kearifan lokal yang menggambarkan cara hidup dan filosofi masyarakat Gayo di Aceh."
+                        }
+]
+
         },
         {
             "id": 4,
@@ -62,10 +113,26 @@
             "situs": "Istana Pagaruyung, Lubang Jepang Bukittinggi",
             "tokoh": "Prof. Dr. Mohammad Hatta, Tuanku Imam Bonjol",
             "budaya": [
-                "https://cdnwpedutorenews.gramedia.net/wp-content/uploads/2021/09/24174252/CaL0a17WEAIrJiw-810x540.jpg",
-                "https://akcdn.detik.net.id/community/media/visual/2023/08/09/rumah-adat-sumatera-barat_169.jpeg?w=700&q=90",
-                "https://akcdn.detik.net.id/community/media/visual/2020/05/10/b6fc136a-dd6f-4452-887c-d85ba69b8080.jpeg?w=800",
-                "https://indonesiakaya.com/wp-content/uploads/2020/10/Festival_Tabuik_1200.jpg"
+                {
+                    "url" : "https://cdnwpedutorenews.gramedia.net/wp-content/uploads/2021/09/24174252/CaL0a17WEAIrJiw-810x540.jpg",
+                    "title" : "Tari Piring",
+                    "description" : "Dilakukan oleh para penari yang membawa piring-piring di kedua tangannya."
+                },
+                {
+                    "url" : "https://akcdn.detik.net.id/community/media/visual/2023/08/09/rumah-adat-sumatera-barat_169.jpeg?w=700&q=90",
+                    "title" : "Rumah Gadang",
+                    "description" : "Atap Tanduk Kerbau: Salah satu ciri paling mencolok dari rumah adat Minangkabau"
+                },
+                {
+                    "url" : "https://akcdn.detik.net.id/community/media/visual/2020/05/10/b6fc136a-dd6f-4452-887c-d85ba69b8080.jpeg?w=800",
+                    "title" : "Talempong ",
+                    "description" : "alat musik tradisional Minangkabau"
+                },
+                {
+                    "url" : "https://indonesiakaya.com/wp-content/uploads/2020/10/Festival_Tabuik_1200.jpg",
+                    "title" : "Festival Tabuik",
+                    "description" : "Peringatan hari wafatnya Hussein bin Ali, cucu Nabi Muhammad SAW."
+                }
             ]
         },
         {
@@ -78,12 +145,30 @@
             "bahasa": "Bahasa Rejang",
             "situs": "Benteng Marlborough, Monumen Thomas Parr",
             "tokoh": "Ahmad Marzuki, Fatmawati",
-            "budaya": [
-                "https://jurnalnews.co.id/wp-content/uploads/2022/06/images-5-1.jpeg",
-                "https://www.lamudi.co.id/journal/wp-content/uploads/2023/11/bengkulu.jpg",
-                "https://pariwisataindonesia.id/wp-content/uploads/2020/09/dutawarta.com_.jpg",
-                "https://asset.kompas.com/crops/yq2i2ZhzrXriEcDF4HuHgj8hwFA=/24x11:792x523/750x500/data/photo/2017/11/10/2196520407.jpg"
+            "budaya": 
+            [
+                {
+                    "url" : "https://jurnalnews.co.id/wp-content/uploads/2022/06/images-5-1.jpeg",
+                    "title" : "Tari Andun",
+                    "description" : "tarian tradisional yang biasanya ditampilkan dalam acara pernikahan dan pesta rakyat."
+                },
+                {
+                    "url" : "https://www.lamudi.co.id/journal/wp-content/uploads/2023/11/bengkulu.jpg",
+                    "title" : "Rumah Bubungan Lima",
+                    "description" : "Rumah ini merupakan salah satu simbol kebudayaan dan arsitektur masyarakat Bengkulu"
+                },
+                {
+                    "url" : "https://pariwisataindonesia.id/wp-content/uploads/2020/09/dutawarta.com_.jpg",
+                    "title" : "Dol",
+                    "description" : "Alat musik perkusi yang sangat khas dari Bengkulu"
+                },
+                {
+                    "url" : "https://asset.kompas.com/crops/yq2i2ZhzrXriEcDF4HuHgj8hwFA=/24x11:792x523/750x500/data/photo/2017/11/10/2196520407.jpg",
+                    "title" : "Batik Besurek",
+                    "description" : "Batik Besurek beraal dari Bahsa Melayu Bengkulu"
+                }
             ]
+            
         },
 
 

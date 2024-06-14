@@ -27,6 +27,21 @@ const ExplorePage = {
         container.innerHTML += kategoriTemplate(province);
       });
 
+              // Menambahkan event listener untuk navigasi ke halaman detail provinsi
+              container.addEventListener("click", async function(event) {
+                if (event.target.classList.contains("kategori-items")) {
+                    event.preventDefault();
+                    const provinceId = event.target.getAttribute("href").split('/').pop();
+                    await this.navigateToProvinceDetail(provinceId);
+                }
+            }.bind(this));
+        },
+    
+        async navigateToProvinceDetail(provinceId) {
+            const url = `#/province-detail/${provinceId}`;
+            window.location.hash = url;
+        
+
   },
 };
 

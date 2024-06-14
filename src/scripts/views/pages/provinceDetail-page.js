@@ -18,6 +18,15 @@ const ProvinceDetail = {
       const container = document.querySelector('.province-detail');
 
 
+      // Ambil id provinsi dari URL
+      const provinceId = url.id;
+      const provinceData = data.provinces.find(province => province.id.toString() === provinceId);
+
+      if (!provinceData) {
+          provinceDetailContainer.innerHTML = '<p>Province not found!</p>';
+          return;
+      }
+
       if (header && provinceHeaderContent) {
         window.addEventListener("scroll", function() {
           if (window.scrollY > provinceHeaderContent.offsetHeight) {
@@ -28,7 +37,7 @@ const ProvinceDetail = {
         });
       }
 
-      container.innerHTML = provinceDetailTemplate(data);
+      container.innerHTML = provinceDetailTemplate(provinceData);
     },
   };
   

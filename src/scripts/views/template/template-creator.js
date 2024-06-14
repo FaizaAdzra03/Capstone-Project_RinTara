@@ -1,6 +1,12 @@
 const recentItemTemplate = () => ``;
 
-const exploreItemTemplate = () => ``;
+const exploreItemTemplate = (data) => `
+<a href="#/province-detail/${data.id}" class="explore-items">
+                    <div class="explore-item-img">
+                        <img src="${data.image}" alt="">
+                    </div>
+                    <p>${data.title}</p>
+                </a> `;
 
 const kategoriTemplate = (data) => `
         <a href="#/province-detail/${data.id}" class="kategori-items">
@@ -12,7 +18,7 @@ const kategoriTemplate = (data) => `
     `;
     
 
-    const provinceDetailTemplate = (data) => `
+  const provinceDetailTemplate = (data) =>`
     <div class="header-content">
       <img src="${data.image}" alt="${data.title}">
       <div class="overlay-text">
@@ -31,12 +37,18 @@ const kategoriTemplate = (data) => `
         <p>Tokoh Sejarah : ${data.tokoh}</p>
       </section>
   
-      <section class="culture">
+        <section class="culture">
         <h2>Budaya</h2>
         <div class="culture-card-list">
-          <div class="culture-cards">
-
-          </div>
+          ${data.budaya.map(item => `
+            <div class="culture-card">
+              <img src="${item.url}" alt="Cultural Image" />
+              <div class="culture-info">
+                <h3>${item.title}</h3>
+                <p>${item.description}</p>
+              </div>
+            </div>
+          `).join('')}
         </div>
       </section>
   
@@ -59,6 +71,8 @@ const kategoriTemplate = (data) => `
       </section>
     </div>
   `;
+
+     
 
 export {
     recentItemTemplate,

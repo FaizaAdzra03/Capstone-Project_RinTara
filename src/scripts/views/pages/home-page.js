@@ -1,4 +1,6 @@
 import initSlider from "../../utils/scrollHandler";
+import { exploreItemTemplate } from "../template/template-creator";
+import data from '../../data/DATA.json';
 
 const HomePage = {
   async render() {
@@ -69,56 +71,7 @@ const HomePage = {
             
             <button id="prev-slide" class="slide-button material-symbols-rounded">chevron_left</button>
 
-            <div class="explore-content">                
-                <a href="#/explore" class="explore-items">
-                    <div class="explore-item-img">
-                        <img src="./images/image3.png" alt="">
-                    </div>
-                    <p>Jawa Barat</p>
-                </a>
-                <a href="#/explore" class="explore-items">
-                    <div class="explore-item-img">
-                        <img src="./images/image3.png" alt="">
-                    </div>
-                    <p>Jawa Barat</p>
-                </a>
-                <a href="#/explore" class="explore-items">
-                    <div class="explore-item-img">
-                        <img src="./images/image3.png" alt="">
-                    </div>
-                    <p>Jawa Barat</p>
-                </a>
-                <a href="#/explore" class="explore-items">
-                    <div class="explore-item-img">
-                        <img src="./images/image3.png" alt="">
-                    </div>
-                    <p>Jawa Barat</p>
-                </a>
-                <a href="#/explore" class="explore-items">
-                    <div class="explore-item-img">
-                        <img src="./images/image3.png" alt="">
-                    </div>
-                    <p>Jawa Barat</p>
-                </a>
-                <a href="#/explore" class="explore-items">
-                    <div class="explore-item-img">
-                        <img src="./images/image3.png" alt="">
-                    </div>
-                    <p>Jawa Barat</p>
-                </a>
-                <a href="#/explore" class="explore-items">
-                    <div class="explore-item-img">
-                        <img src="./images/image3.png" alt="">
-                    </div>
-                    <p>Jawa Barat</p>
-                </a>
-                <a href="#/explore" class="explore-items">
-                    <div class="explore-item-img">
-                        <img src="./images/image3.png" alt="">
-                    </div>
-                    <p>Jawa Barat</p>
-                </a>
-            </div>
+           <div class="explore-content"></div>
 
             <button id="next-slide" class="slide-button material-symbols-rounded">chevron_right</button>
 
@@ -137,6 +90,11 @@ const HomePage = {
     const header = document.querySelector(".app-header");
     const heroElement = document.querySelector(".hero-element");
     
+    const container = document.querySelector('.explore-content');
+      data.provinces.forEach((province) => {
+        container.innerHTML += exploreItemTemplate(province);
+      });
+
     window.addEventListener("scroll", function() {
         if (window.scrollY > heroElement.offsetHeight) {
             header.classList.add("scrolled");
@@ -148,6 +106,7 @@ const HomePage = {
     window.addEventListener("resize", initSlider());
     window.addEventListener("load", initSlider());
  
+    
   },
 };
 
