@@ -114,9 +114,24 @@ Explore Page
     text-align: center;
 }
 
+.seemore{
+  display: flex;
+  justify-content: end;
+}
+
+.seeMoreBtn{
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.seeMoreBtn:hover{
+  font-weight: 700;
+}
+
 .explore-content{
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     gap: 40px;
 
     padding-top: 30px;
@@ -150,6 +165,7 @@ Explore Page
 
 .explore .slide-button#prev-slide{
   left: -20px;
+  z-index: 99;
 }
 
 .explore .slide-button#next-slide{
@@ -219,6 +235,8 @@ Explore Page
 
 .explore-items{
     text-decoration: none;
+    transition: transform 0.3s ease;
+
 }
 
 .explore-items img{
@@ -233,4 +251,8 @@ Explore Page
     font-size: 1.5rem;
     color: black;
 
+}
+
+.explore-items:hover {
+  transform: scale(1.05);
 }

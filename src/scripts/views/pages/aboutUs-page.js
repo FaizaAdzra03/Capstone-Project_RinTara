@@ -71,6 +71,8 @@ const AboutUs = {
     async afterRender() {
       const header = document.querySelector(".app-header");
       header.classList.add("scrolled");
+
+      window.scrollTo(0, 0);
     },
   };
   

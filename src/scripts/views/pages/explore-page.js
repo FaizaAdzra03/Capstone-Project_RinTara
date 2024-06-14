@@ -1,5 +1,6 @@
 import { kategoriTemplate } from "../template/template-creator";
 import data from '../../data/DATA.json';
+import { makeSearch } from "../../utils/searchProvinceHandler";
 
 const ExplorePage = {
   async render() {
@@ -9,8 +10,9 @@ const ExplorePage = {
 
         <div class="search-section">
             <div class="search-bar">
-                <input type="text" placeholder="Search">
+                <input type="text" id="inputProvince" placeholder="Search">
             </div>
+            <div class="search-result"></div>
         </div>
 
         <div class="kategori"></div>
@@ -27,22 +29,31 @@ const ExplorePage = {
         container.innerHTML += kategoriTemplate(province);
       });
 
-              // Menambahkan event listener untuk navigasi ke halaman detail provinsi
-              container.addEventListener("click", async function(event) {
-                if (event.target.classList.contains("kategori-items")) {
-                    event.preventDefault();
-                    const provinceId = event.target.getAttribute("href").split('/').pop();
-                    await this.navigateToProvinceDetail(provinceId);
-                }
-            }.bind(this));
-        },
-    
-        async navigateToProvinceDetail(provinceId) {
-            const url = `#/province-detail/${provinceId}`;
-            window.location.hash = url;
+      window.scrollTo(0, 0);
+    // Menambahkan event listener untuk navigasi ke halaman detail provinsi
+      container.addEventListener("click", async function(event) {
+      if (event.target.classList.contains("kategori-items")) {
+          event.preventDefault();
+          const provinceId = event.target.getAttribute("href").split('/').pop();
+          await this.navigateToProvinceDetail(provinceId);
+          }
+      }.bind(this));
         
-
+      // document.getElementById("search-btn").addEventListener("click", makeSearch);
+      document.getElementById("inputProvince").addEventListener("input", makeSearch);
+      document.getElementById("inputProvince").addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+          makeSearch();
+        }
+      });
   },
+    
+  async navigateToProvinceDetail(provinceId) {
+    const url = `#/province-detail/${provinceId}`;
+    window.location.hash = url;
+  },
+    
+        
 };
 
 export default ExplorePage;

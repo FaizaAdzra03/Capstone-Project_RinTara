@@ -68,7 +68,9 @@ const HomePage = {
 
         <div class="explore">
             <h2>Explore</h2>
-            
+            <div class="seemore">
+                <a class="seeMoreBtn" href="#/explore">See more →</a>
+            </div>            
             <button id="prev-slide" class="slide-button material-symbols-rounded">chevron_left</button>
 
            <div class="explore-content"></div>
@@ -89,11 +91,12 @@ const HomePage = {
   async afterRender() {
     const header = document.querySelector(".app-header");
     const heroElement = document.querySelector(".hero-element");
-    
     const container = document.querySelector('.explore-content');
-      data.provinces.forEach((province) => {
-        container.innerHTML += exploreItemTemplate(province);
-      });
+
+    window.scrollTo(0, 0);
+    data.provinces.slice(0, 8).forEach((province) => {
+    container.innerHTML += exploreItemTemplate(province);
+    });
 
     window.addEventListener("scroll", function() {
         if (window.scrollY > heroElement.offsetHeight) {

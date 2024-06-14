@@ -30,8 +30,6 @@ h2{
     top: 0;
     left: 0;
     z-index: 99;
-    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #AF8F6F; */
     box-shadow: none;
     background-color: transparent;
     color: white;
@@ -44,10 +42,6 @@ h2{
     transition: background-color 0.3s ease-in-out;
     background-color: #AF8F6F;
 
-    /* box-shadow: none;
-    background-color: transparent;
-    color: white; */
-
 }
 
 .app-bar{
@@ -55,7 +49,7 @@ h2{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px 0 20px;
+    padding: 10px 20px 10px 20px;
 }
 
 .app-bar-logo{
@@ -81,8 +75,8 @@ h2{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    width: 60%;
+    justify-content: end;
+    width: 100%;
     font-size: 1rem;
 }
 
@@ -176,7 +170,8 @@ hero
 .search-section{
   display: flex;
   justify-content: start;
-  align-items: center;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .search-bar{
@@ -192,6 +187,9 @@ hero
     border-radius: 10px;
 }
 
+.search-result{
+  padding-bottom: 10px;
+}
 
 /* Kategori */
 .explore-page{
@@ -216,6 +214,7 @@ hero
     background-color: #382714;
     padding: 10px;
     text-decoration: none;
+
 }
 
 .kategori-img{

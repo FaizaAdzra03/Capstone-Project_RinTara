@@ -71,12 +71,12 @@
   }
   @media screen and (max-width: 920px) {
     .kategori{
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
 
     .kategori-items{
-      min-width: 180px;
-      min-height: 180px;
+      max-width: 290px;
+      max-height: 240px;
     }
 
     .kategori-items p {
@@ -99,13 +99,17 @@
       font-size: 1.2rem;
     }
   }
-  @media screen and (max-width: 898px) {
-    .kategori{
-      grid-template-columns: repeat(3, 1fr);
+  @media screen and (max-width: 860px) {
+    .kategori-items{
+      max-width: 170px;
+      max-height: 180px;
     }
+    
 
   }
   @media screen and (max-width: 840px) {
+
+
     .app-bar-navigation{
       width: 70%;
   }
@@ -169,7 +173,7 @@
 
   .app-bar-navigation ul li a {
       text-decoration: none;
-      font-size: 18px;
+      font-size: 2.2rem;
       color: white;
   }
 
@@ -212,6 +216,11 @@
   .slider-scrollbar .scrollbar-thumb{
     width: 20%;
   }
+
+  .culture-card {
+    max-width: 280px;
+    max-height: 250px;
+}
 
   footer-bar img {
     max-width: 45%;
@@ -281,10 +290,6 @@
       height: 100%;
   }
 
-  .app-bar-navigation ul li a {
-      font-size: 15px;
-  }
-
   .app-bar-navigation .user-login a {
       font-size: 15px;
   }
@@ -316,6 +321,10 @@
       display: grid;
       padding: 50px 20px 50px 20px;
   }
+
+  .overlay-text {
+    left: 45%;
+  }
   footer-bar {
     flex-direction: column;
     align-items: center;
@@ -330,10 +339,17 @@
   }
   
   @media screen and (max-width: 440px) {
+    .kategori{
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .search-section {
+      justify-content: center;
+    }
+
     .kategori-items{
-      width: 90%;
-      height: 90%;
-  }
+      max-width: 250px;
+      max-height: 250px;
+    }
 
   .article-content h1 {
     margin-top: 0;
@@ -348,7 +364,7 @@
 
   .search-bar input{
     font-size: 1rem;
-    max-width: 90%;
+    max-width: 100%;
   }
 
   .article-item h3{

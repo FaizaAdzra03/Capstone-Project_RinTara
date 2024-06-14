@@ -18,6 +18,7 @@ const ProvinceDetail = {
       const container = document.querySelector('.province-detail');
 
 
+      window.scrollTo(0, 0);
       // Ambil id provinsi dari URL
       const provinceId = url.id;
       const provinceData = data.provinces.find(province => province.id.toString() === provinceId);

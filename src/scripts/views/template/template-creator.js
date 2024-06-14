@@ -1,7 +1,7 @@
 const recentItemTemplate = () => ``;
 
 const exploreItemTemplate = (data) => `
-<a href="#/province-detail/${data.id}" class="explore-items">
+        <a href="#/province-detail/${data.id}" class="explore-items">
                     <div class="explore-item-img">
                         <img src="${data.image}" alt="">
                     </div>
