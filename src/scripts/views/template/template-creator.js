@@ -45,7 +45,7 @@ const kategoriTemplate = (data) => `
               <img src="${item.url}" alt="Cultural Image" />
               <div class="culture-info">
                 <h3>${item.title}</h3>
-                <p>${item.description}</p>
+               
               </div>
             </div>
           `).join('')}
