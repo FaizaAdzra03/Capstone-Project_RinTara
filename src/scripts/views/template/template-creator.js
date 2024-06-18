@@ -1,4 +1,4 @@
-const recentItemTemplate = () => ``;
+const recentItemTemplate = () => '';
 
 const exploreItemTemplate = (data) => `
         <a href="#/province-detail/${data.id}" class="explore-items">
@@ -16,9 +16,8 @@ const kategoriTemplate = (data) => `
             <p>${data.title}</p>
         </a>
     `;
-    
 
-  const provinceDetailTemplate = (data) =>`
+const provinceDetailTemplate = (data) => `
     <div class="header-content">
       <img src="${data.image}" alt="${data.title}">
       <div class="overlay-text">
@@ -40,7 +39,7 @@ const kategoriTemplate = (data) => `
         <section class="culture">
         <h2>Budaya</h2>
         <div class="culture-card-list">
-          ${data.budaya.map(item => `
+          ${data.budaya.map((item) => `
             <div class="culture-card">
               <img src="${item.url}" alt="Cultural Image" />
               <div class="culture-info">
@@ -60,7 +59,6 @@ const kategoriTemplate = (data) => `
         </div>
         <div class="article-container">
           <div class="article-item">
-            <span class="favorite">&#x2661;</span>
             <a href="#/article">
               <h3>Judul Artikel</h3>
             </a>
@@ -72,11 +70,9 @@ const kategoriTemplate = (data) => `
     </div>
   `;
 
-     
-
 export {
-    recentItemTemplate,
-    exploreItemTemplate,
-    kategoriTemplate,
-    provinceDetailTemplate,
-}
+  recentItemTemplate,
+  exploreItemTemplate,
+  kategoriTemplate,
+  provinceDetailTemplate,
+};

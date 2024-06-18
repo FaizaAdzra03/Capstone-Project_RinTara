@@ -1,5 +1,5 @@
-import initSlider from "../../utils/scrollHandler";
-import { exploreItemTemplate } from "../template/template-creator";
+import initSlider from '../../utils/scrollHandler';
+import { exploreItemTemplate } from '../template/template-creator';
 import data from '../../data/DATA.json';
 
 const HomePage = {
@@ -12,7 +12,7 @@ const HomePage = {
 
                 <a href="" class="recent-item">
                     <div class="recent-item-img">
-                        <img src="./images/image3.png" alt="">
+                        <img src="./images/volcano.jpg" alt="">
                     </div>
                     <div class="recent-item-content">
                         <h3>Judul</h3>
@@ -23,7 +23,7 @@ const HomePage = {
 
                 <a href="" class="recent-item">
                     <div class="recent-item-img">
-                        <img src="./images/image3.png" alt="">
+                        <img src="./images/volcano.jpg" alt="">
                     </div>
                     <div class="recent-item-content">
                         <h3>Judul</h3>
@@ -34,7 +34,7 @@ const HomePage = {
 
                 <a href="" class="recent-item">
                     <div class="recent-item-img">
-                        <img src="./images/image3.png" alt="">
+                        <img src="./images/volcano.jpg" alt="">
                     </div>
                     <div class="recent-item-content">
                         <h3>Judul</h3>
@@ -46,7 +46,7 @@ const HomePage = {
 
                 <a href="" class="recent-item">
                     <div class="recent-item-img">
-                        <img src="./images/image3.png" alt="">
+                        <img src="./images/volcano.jpg" alt="">
                     </div>
                     <div class="recent-item-content">
                         <h3>Judul</h3>
@@ -68,7 +68,7 @@ const HomePage = {
                 penuh warna. Seni tradisional, seperti ukiran kayu, batik, dan tenun ikat, dipertahankan oleh para pengrajin yang meneruskan keterampilan 
                 ini dari generasi ke generasi. Gastronomi Indonesia, dengan rempah-rempah yang khas dan variasi masakan lokal, menawarkan palet rasa yang 
                 memanjakan lidah dan menggugah selera. Ini adalah tanah dimana tradisi dan modernitas bertemu, menciptakan harmoni yang dinamis dan menarik.</p>
-                <img src="./images/volcano-with-mist-sunset 2.jpg" alt="about-indonesia-picture">
+                <img src="./images/volcano.jpg" alt="about-indonesia-picture">
             </div>
         </div>
 
@@ -95,37 +95,34 @@ const HomePage = {
   },
 
   async afterRender() {
-    const header = document.querySelector(".app-header");
-    const heroElement = document.querySelector(".hero-element");
+    const header = document.querySelector('.app-header');
+    const heroElement = document.querySelector('.hero-element');
     const container = document.querySelector('.explore-content');
 
     window.scrollTo(0, 0);
     data.provinces.slice(0, 8).forEach((province) => {
-    container.innerHTML += exploreItemTemplate(province);
+      container.innerHTML += exploreItemTemplate(province);
     });
 
+    // Function to check the scroll position and add/remove the "scrolled" class
+    const checkScrollPosition = () => {
+      const heroBottom = heroElement.getBoundingClientRect().bottom + window.scrollY;
 
-      // Function to check the scroll position and add/remove the "scrolled" class
-  const checkScrollPosition = () => {
-    const heroBottom = heroElement.getBoundingClientRect().bottom + window.scrollY;
-    
-    if (window.scrollY >= heroBottom) {
-      header.classList.add("scrolled");
-    } else {
-      header.classList.remove("scrolled");
-    }
-  };
-  
-  // Initial check in case the page is already scrolled
-  checkScrollPosition();
-  
-  // Add the scroll event listener
-  window.addEventListener('scroll', checkScrollPosition);
+      if (window.scrollY >= heroBottom) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    };
 
-    window.addEventListener("resize", initSlider());
-    window.addEventListener("load", initSlider());
- 
-    
+    // Initial check in case the page is already scrolled
+    checkScrollPosition();
+
+    // Add the scroll event listener
+    window.addEventListener('scroll', checkScrollPosition);
+
+    window.addEventListener('resize', initSlider());
+    window.addEventListener('load', initSlider());
   },
 };
 
