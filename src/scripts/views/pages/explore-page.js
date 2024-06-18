@@ -21,6 +21,7 @@ const ExplorePage = {
   },
 
   async afterRender() {
+    window.scrollTo(0, 0);
       const header = document.querySelector(".app-header");
       header.classList.add("scrolled");
 
@@ -29,7 +30,6 @@ const ExplorePage = {
         container.innerHTML += kategoriTemplate(province);
       });
 
-      window.scrollTo(0, 0);
     // Menambahkan event listener untuk navigasi ke halaman detail provinsi
       container.addEventListener("click", async function(event) {
       if (event.target.classList.contains("kategori-items")) {

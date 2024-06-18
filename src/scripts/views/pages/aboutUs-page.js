@@ -65,10 +65,10 @@ const AboutUs = {
     },
   
     async afterRender() {
+      window.scrollTo(0, 0);
       const header = document.querySelector(".app-header");
       header.classList.add("scrolled");
 
-      window.scrollTo(0, 0);
     },
   };
   

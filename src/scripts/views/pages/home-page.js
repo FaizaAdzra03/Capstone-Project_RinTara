@@ -104,13 +104,23 @@ const HomePage = {
     container.innerHTML += exploreItemTemplate(province);
     });
 
-    window.addEventListener("scroll", function() {
-        if (window.scrollY > heroElement.offsetHeight) {
-            header.classList.add("scrolled");
-        } else {
-            header.classList.remove("scrolled");
-        }
-    });
+
+      // Function to check the scroll position and add/remove the "scrolled" class
+  const checkScrollPosition = () => {
+    const heroBottom = heroElement.getBoundingClientRect().bottom + window.scrollY;
+    
+    if (window.scrollY >= heroBottom) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  };
+  
+  // Initial check in case the page is already scrolled
+  checkScrollPosition();
+  
+  // Add the scroll event listener
+  window.addEventListener('scroll', checkScrollPosition);
 
     window.addEventListener("resize", initSlider());
     window.addEventListener("load", initSlider());

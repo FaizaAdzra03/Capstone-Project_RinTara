@@ -5,7 +5,7 @@ const ArticlePage = {
         <div class="article-content">
       <h1>Sejarah Candi Borobudur</h1>
       <img
-        src="./images/pura.jpg"
+        src="./images/teacher.jpg"
         alt="Candi Borobudur"
         class="featured-image"
       />
@@ -25,10 +25,16 @@ const ArticlePage = {
     },
   
     async afterRender() {
-      const header = document.querySelector(".app-header");
-      header.classList.add("scrolled");
-
       window.scrollTo(0, 0);
+      const header = document.querySelector(".app-header");
+      // header.classList.add("scrolled");
+
+      if (window.scrollY === 0) {
+        header.classList.add("scrolled");
+      }else{
+        header.classList.add("scrolled");
+      }
+
     },
   };
   
