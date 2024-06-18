@@ -1,3 +1,7 @@
+import { kategoriTemplate } from "../template/template-creator";
+import data from '../../data/DATA.json';
+import { makeSearch } from "../../utils/searchProvinceHandler";
+
 const ExplorePage = {
   async render() {
     return `
@@ -6,54 +10,50 @@ const ExplorePage = {
 
         <div class="search-section">
             <div class="search-bar">
-                <input type="text" placeholder="Search">
+                <input type="text" id="inputProvince" placeholder="Search">
             </div>
+            <div class="search-result"></div>
         </div>
 
-        <div class="kategori">
-            <a href="#/province-detail" class="kategori-items">
-                <div class="kategori-img">
-                    <img src="../images/image3.png" alt="">
-                </div>
-                <p>Jawa Timur</p>
-            </a>
-
-            <!-- Tambahan aja -->
-            <a href="#/province" class="kategori-items">
-                <div class="kategori-img">
-                    <img src="../images/image3.png" alt="">
-                </div>
-                <p>Jawa Timur</p>
-            </a>
-            <a href="#/province" class="kategori-items">
-                <div class="kategori-img">
-                    <img src="../images/image3.png" alt="">
-                </div>
-                <p>Jawa Timur</p>
-            </a>
-            <a href="#/province" class="kategori-items">
-                <div class="kategori-img">
-                    <img src="../images/image3.png" alt="">
-                </div>
-                <p>Jawa Timur</p>
-            </a>
-            <a href="#/province" class="kategori-items">
-                <div class="kategori-img">
-                    <img src="../images/image3.png" alt="">
-                </div>
-                <p>Jawa Timur</p>
-            </a>
-
-            
-        </div>
+        <div class="kategori"></div>
     </div>
       `;
   },
 
   async afterRender() {
-    const hero = document.querySelector('hero-element');
-    hero.style.display = 'none';
+      const header = document.querySelector(".app-header");
+      header.classList.add("scrolled");
+
+      const container = document.querySelector('.kategori');
+      data.provinces.forEach((province) => {
+        container.innerHTML += kategoriTemplate(province);
+      });
+
+      window.scrollTo(0, 0);
+    // Menambahkan event listener untuk navigasi ke halaman detail provinsi
+      container.addEventListener("click", async function(event) {
+      if (event.target.classList.contains("kategori-items")) {
+          event.preventDefault();
+          const provinceId = event.target.getAttribute("href").split('/').pop();
+          await this.navigateToProvinceDetail(provinceId);
+          }
+      }.bind(this));
+        
+      // document.getElementById("search-btn").addEventListener("click", makeSearch);
+      document.getElementById("inputProvince").addEventListener("input", makeSearch);
+      document.getElementById("inputProvince").addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+          makeSearch();
+        }
+      });
   },
+    
+  async navigateToProvinceDetail(provinceId) {
+    const url = `#/province-detail/${provinceId}`;
+    window.location.hash = url;
+  },
+    
+        
 };
 
 export default ExplorePage;
