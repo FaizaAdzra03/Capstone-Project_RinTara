@@ -63,7 +63,7 @@ const provinceDetailTemplate = (data) => `
     </div>
   `;
 
-  const historyArticleTemplate = (data) => `
+const historyArticleTemplate = (data) => `
   <div class="article-item">
             <a href="#/article/${data.id}">
               <h3>${data.title}</h3>
@@ -73,7 +73,7 @@ const provinceDetailTemplate = (data) => `
           </div>
           `;
 
-  const articleContentTemplate = (data) => `
+const articleContentTemplate = (data) => `
   <div class="article-content">
       <h1>${data.title}</h1>
       <img

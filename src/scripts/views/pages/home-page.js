@@ -62,8 +62,8 @@ const HomePage = {
     });
 
     dataArticle.articles.slice(0, 4).forEach((article) => {
-        recentItemContainer.innerHTML += recentItemTemplate(article);
-      });
+      recentItemContainer.innerHTML += recentItemTemplate(article);
+    });
 
     // Function to check the scroll position and add/remove the "scrolled" class
     const checkScrollPosition = () => {

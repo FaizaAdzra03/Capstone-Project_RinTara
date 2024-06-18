@@ -73,8 +73,6 @@ const ProvinceDetail = {
 
     // Add the scroll event listener
     window.addEventListener('scroll', checkScrollPosition);
-
-    
   },
 };
 
