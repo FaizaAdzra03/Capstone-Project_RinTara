@@ -26,8 +26,8 @@ With RinTara, we strive to enrich the public's knowledge about the nation's cult
 
 # Instalasi Project di Lokal
 1. Clone Proyek
-   https://github.com/FaizaAdzra03/Capstone-Project_RinTara.git
+   ```https://github.com/FaizaAdzra03/Capstone-Project_RinTara.git```
 2. Install Library menggunakan npm
-   npm install
+   ```npm install```
 3. Jalankan project
-   npm run start
+   ```npm run start```
